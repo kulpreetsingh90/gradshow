@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="main/main.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
+    <script src="wow.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        #mapContainer {
+            position: relative;
+            top: 7em;
+            right: 10em;
+            bottom: 10em;
+            left: 10em;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sec-1">
+        <i class="fab fa-apple"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+            stand up design <br>
+            and a whole load<br>
+            of code !</h1>
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section class="sec-2">
+        <div class="container">
+            <div class="heading-container">
+                <h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+                    we are <br>
+                    amazing: <br>
+                    designers</h1>
+            </div>
+            <div class="images-containers">
+                <div class="square-1" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-2" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-3" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-4" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-5" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-6" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div class="container">
+            <div class="heading-container">
+                <h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+                    we are <br>
+                    great <br>
+                    coders:</h1>
+            </div>
+            <div class="images-containers">
+                <div class="square-1" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-2" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-3" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-4" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-5" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-6" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-4">
+        <div class="container">
+            <div class="heading-container">
+                <h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+                    Meet the <br>
+                    graduating <br>
+                    students of <br>
+                    2019:</h1>
+            </div>
+            <div class="images-containers">
+                <div class="square-1" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-2" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-3" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-4" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-5" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-6" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-7" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-8" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-9" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-10" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-11" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-12" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+                <div class="square-13" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce">
+                    <img src="img/image-1.jpg" class="gallery__img" alt="Image 1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-5">
+        <div class="left" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">
+            <h1>our show details</h1>
+        </div>
+        <div class="right" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">
+            <div class="right" id="mapContainer"> </div>
+        </div>
+    </section>
+    <section class="sec-6">
+        <div class="one" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+            data-sal-easing="ease-out-bounce">
+            <h3>Meet</h3>
+            <p>a paragraph here</p>
+        </div>
+        <div class="two" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="500"
+            data-sal-easing="ease-out-bounce">
+            <h3>our</h3>
+            <p>a paragraph here</p>
+        </div>
+        <div class="three" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="700"
+            data-sal-easing="ease-out-bounce">
+            <h3>Team</h3>
+            <p>a paragraph here</p>
+        </div>
+        <div class="four" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="500"
+            data-sal-easing="ease-out-bounce">
+            <h3>our</h3>
+            <p>a paragraph here</p>
+        </div>
+        <div class="five" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="700"
+            data-sal-easing="ease-out-bounce">
+            <h3>Team</h3>
+            <p>a paragraph here</p>
+        </div>
+    </section>
+    <!-- Using the CDN hosterd leaflet version -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        // instantiate a new map object L.map
+        var map = L.map('mapContainer').setView([49.708511, -124.969360], 12);
+        //Base layer
+        var Layer = L.tileLayer('http:{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href =http://www.openstreetmap.org/copyright">OpenSreetMap</a> contributors, &copy; <a href="https://catro.com/attributions">CARTO</a>'
+        }).addTo(map);
+        // Adding Marker
+        L.marker([49.708510, -124.969360]).addTo(map)
+            .bindPopup('North Island College, </br> 2300 Ryan Rd, Courtenay ')
+            .openPopup();
+    </script>
+
+    <script src="node_modules/sal.js/dist/sal.js"></script>
+    <script>
+        sal({
+            threshold: 1,
+            once: false,
+        });
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
